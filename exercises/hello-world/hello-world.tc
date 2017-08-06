@@ -1,0 +1,11 @@
+pwd←⎕FIO 30
+⍎ ')COPY ',pwd,'/hello-world.apl'
+
+⍝ ∇hello
+
+⍝ it returns 'Hello, World!'
+  1⎕CR hello
+'Hello, World!'
+
+⍝ display log on stderr as Unicode
+chars ← '%s' (19⎕CR ⎕FIO[26] './hello-world.tc.log') ⎕FIO[22] 2
