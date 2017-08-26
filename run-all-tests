@@ -11,6 +11,7 @@ for exercise in tmp/*; do
   if ! apl -T *.tc; then
     STATUS=1
   fi
+  popd
 done
 
 echo "Exiting with status ${STATUS}."
