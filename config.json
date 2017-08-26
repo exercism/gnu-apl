@@ -10,6 +10,13 @@
       "core": true,
       "difficulty": 1,
       "topics": ["setup"]
+    },
+    {
+      "uuid": "9a89822e-0d61-f980-49fa-c273c0a0e0869b9fc7f",
+      "slug": "leap",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["conditions", "dates"]
     }
   ],
   "deprecated": [
