@@ -1,0 +1,17 @@
+#!/bin/bash
+
+STATUS=0
+cp --recursive exercises tmp
+
+for exercise in tmp/*; do
+  pushd $exercise
+  for example in *-example.apl; do
+    mv $example ${example/-example/}
+  done
+  if ! apl -T *.tc; then
+    STATUS=1
+  fi
+done
+
+echo "Exiting with status ${STATUS}."
+exit $STATUS
