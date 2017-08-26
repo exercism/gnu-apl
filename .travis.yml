@@ -1,8 +1,8 @@
 language: bash
 
 before_install:
-  - wget ftp://ftp.gnu.org/gnu/apl/apl_1.7-1_amd64.deb
-  - sudo dpkg -i apl_1.7-1_amd64.deb
+  - wget ftp://ftp.gnu.org/gnu/apl/apl_1.6-1_amd64.deb
+  - sudo dpkg -i apl_1.6-1_amd64.deb
 
 script:
   - bin/fetch-configlet
