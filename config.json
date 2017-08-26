@@ -2,9 +2,15 @@
   "track_id": "gnu-apl",
   "language": "GNU APL",
   "active": false,
-  "test_pattern": "TODO",
+  "test_pattern": "\\.tc$",
   "exercises": [
-
+    {
+      "uuid": "81121f0c-1218-4d88-bb6c-fd9df3bc0b8d",
+      "slug": "hello-world",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["setup"]
+    }
   ],
   "deprecated": [
 
