@@ -3,7 +3,7 @@
   "language": "GNU APL",
   "active": false,
   "test_pattern": "[.]tc$",
-  "setup_files": ["^[.]/test[.]apl$"],
+  "setup_files": ["./test.apl"],
   "exercises": [
     {
       "uuid": "81121f0c-1218-4d88-bb6c-fd9df3bc0b8d",
