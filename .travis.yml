@@ -7,4 +7,4 @@ before_install:
 script:
   - bin/fetch-configlet
   - bin/configlet lint .
-  - ./run-all-tests
+  - bin/run-all-tests

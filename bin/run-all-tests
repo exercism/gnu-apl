@@ -2,7 +2,8 @@
 
 STATUS=0
 APL=/usr/bin/apl
-APL_OPTS="--silent --Color"
+APL_OPTS='--silent --Color'
+
 cp --recursive exercises tmp
 
 for exercise in tmp/*; do
