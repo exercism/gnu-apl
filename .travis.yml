@@ -1,5 +1,11 @@
 language: bash
 
-script:
+before_install:
+  - wget ftp://ftp.gnu.org/gnu/apl/apl_1.6-1_amd64.deb
+  - sudo dpkg -i apl_1.6-1_amd64.deb
+  - cp -rv .travis/.gnu-apl ~
   - bin/fetch-configlet
+
+script:
   - bin/configlet lint .
+  - bin/run-all-tests
