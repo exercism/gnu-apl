@@ -18,6 +18,11 @@
   test¯warn test¯read_unicode filename
 ∇
 
+⍝ Evaluate APL code (as string) and return output (in original type) or error message (as string).
+∇z←test∆try apl_string
+  z←(↑¯1↑⎕EC apl_string)[1;]
+∇
+
 ⍝ private
 
 ⍝ Return current directory as a string.
