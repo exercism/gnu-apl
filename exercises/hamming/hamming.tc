@@ -7,7 +7,7 @@ test∆clear_log log
 ⍝ ∇distance
 
 ⍝ empty strands
-  1 ⎕CR '' distance ''
+  1⎕CR '' distance ''
 0
 
 ⍝ identical strands
@@ -19,7 +19,7 @@ test∆clear_log log
 0
 
 ⍝ complete distance in single-nucleotide strands
-  1 ⎕CR 'A' distance 'G'
+  1⎕CR 'A' distance 'G'
 1
 
 ⍝ complete distance in small strands
