@@ -59,11 +59,11 @@ test∆clear_log log
 9
 
 ⍝ disallow first strand longer
-  1 ⎕CR test∆try '''AATG'' distance ''AAA'''
+  1⎕CR test∆try '''AATG'' distance ''AAA'''
 'LENGTH ERROR'
 
 ⍝ disallow second strand longer
-  1 ⎕CR test∆try '''ATA'' distance ''AGTG'''
+  1⎕CR test∆try '''ATA'' distance ''AGTG'''
 'LENGTH ERROR'
 
 test∆show_log log
