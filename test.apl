@@ -18,9 +18,14 @@
   test¯warn test¯read_unicode filename
 ∇
 
-⍝ Evaluate APL code (as string) and return output (in original type) or error message (as string).
-∇z←test∆try apl_string
-  z←(↑¯1↑⎕EC apl_string)[1;]
+⍝ Evaluate APL code (as string).
+⍝ Returns 2-element vector:
+⍝ [1] Boolean (1 if error, 0 if not)
+⍝ [2] Error message if error; original result if not.
+∇z←test∆try apl_string;response;is_error
+  response←⎕EC apl_string
+  is_error←0=↑response
+  z←is_error ((↑¯1↑response)[1;])
 ∇
 
 ⍝ private

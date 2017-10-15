@@ -60,16 +60,16 @@ test∆clear_log log
 
 ⍝ disallow first strand longer
   1⎕CR test∆try '''AATG'' distance ''AAA'''
-'LENGTH ERROR'
+1 'LENGTH ERROR'
 
 ⍝ disallow single vs. multiple letters
   1⎕CR test∆try '''AATG'' distance ''A'''
-'LENGTH ERROR'
+1 'LENGTH ERROR'
   1⎕CR test∆try '''A'' distance ''AAA'''
-'LENGTH ERROR'
+1 'LENGTH ERROR'
 
 ⍝ disallow second strand longer
   1⎕CR test∆try '''ATA'' distance ''AGTG'''
-'LENGTH ERROR'
+1 'LENGTH ERROR'
 
 test∆show_log log
