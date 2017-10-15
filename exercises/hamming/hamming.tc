@@ -11,11 +11,11 @@ test∆clear_log log
 0
 
 ⍝ identical strands
-  'A' distance 'A'
+  1⎕CR 'A' distance 'A'
 0
 
 ⍝ long identical strands
-  'GGACTGA' distance 'GGACTGA'
+  1⎕CR 'GGACTGA' distance 'GGACTGA'
 0
 
 ⍝ complete distance in single-nucleotide strands
