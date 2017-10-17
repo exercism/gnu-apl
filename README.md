@@ -70,7 +70,7 @@ Before submitting your pull request, you'll want to verify the changes in two wa
 All the tests for GNU APL exercises can be run from the top level of the repo with
 
 ```
-# add this command
+bin/run-all-tests
 ```
 
 For the Exercism-specific linting, please see [the documentation](https://github.com/exercism/docs/blob/master/language-tracks/configuration/linting.md).
