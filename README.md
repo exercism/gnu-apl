@@ -88,4 +88,8 @@ Note that:
     - `<exercise-name>.tc` (test suite)
     - `<exercise-name>-example.apl` (example solution)
     - `<exercise-name>.apl` (optional template)
+- Make sure your example file (and template, if you have one) has an initial `#!` (shebang) line; GNU APL doesn't seem to like to execute files without it when they're loaded from the command line. We recommend something like the following:
+```apl
+#!/usr/bin/env apl --script
+```
 - Be sure to add the exercise to the appropriate place in the `config.json` file.
