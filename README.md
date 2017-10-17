@@ -58,8 +58,6 @@ If you plan to make significant or breaking changes, please open an issue so we 
 
 Pull requests should be focused on a single exercise, issue, or conceptually cohesive change. Please refer to Exercism's [pull request guidelines](https://github.com/exercism/docs/blob/master/contributing/pull-request-guidelines.md).
 
-Please follow the coding standards for GNU APL. (If there is a formatter for the track's language, add instructions for using it here.)
-
 ### Verifying Your Change
 
 Before submitting your pull request, you'll want to verify the changes in two ways:
