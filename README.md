@@ -6,7 +6,9 @@ Exercism exercises in GNU APL.
 
 ## Setup
 
-The simplest way to install GNU APL is ...
+On MacOS, GNU APL is available as a [Homebrew](http://brew.sh) package; just type `brew install gnu-apl` to install it.
+
+On other operating systems, the simplest way to install GNU APL is probably to follow the instructions on the [GNU APL website](https://www.gnu.org/software/apl/). Note that version 1.7 seems to have build issues on some systems; if you can't build 1.7, then 1.6 should work.
 
 ## Contributing
 
