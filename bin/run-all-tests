@@ -3,10 +3,11 @@
 STATUS=0
 APL=/usr/bin/apl
 APL_OPTS='--silent --Color'
+TMP=tmp
 
-cp --recursive exercises tmp
+cp --recursive exercises $TMP
 
-for exercise in tmp/*; do
+for exercise in ${TMP}/*; do
   pushd $exercise
   for example in *-example.apl; do
     mv $example ${example/-example/}
@@ -16,6 +17,8 @@ for exercise in tmp/*; do
   fi
   popd
 done
+
+rm -r $TMP
 
 echo "Exiting with status ${STATUS}."
 exit $STATUS
