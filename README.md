@@ -24,11 +24,31 @@ We encourage contributions that provide fixes and improvements to existing exerc
 
 At the most basic level, Exercism is all about the tests. You can read more about how we think about test suites in [the Exercism documentation](https://github.com/exercism/docs/blob/master/language-tracks/exercises/anatomy/test-suites.md).
 
-Test files should use the following format:
+We are currently using GNU APL's testing framework, with some extra tooling found in the test.apl file at the root of the track. So test files should be called `<exercise-name>.tc`, and should be in the following format. (`⍝` indicates comments that should be in the actual test file; `#` are explanatory comments for the purposes of this README.)
 
+```apl
+log←'./<exercise-name>.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative '<exercise-name>.apl'
+test∆clear_log log
+
+# The preceding lines are boilerplate, and must be in every test file (sorry about that!).  The actual test code follows.
+
+⍝ ∇greet # Name of function being tested; not mandatory, but nice.
+
+⍝ it returns a greeting to the supplied name # description of test case
+  1⎕CR greet 'Chris' # APL code to execute; 1⎕CR quotes strings and does other nice things
+'Hello, Chris!' # exact expected output
+
+⍝ when left argument is supplied, uses it instead of 'Hello' # another test case
+  1⎕CR 'Good morning' greet 'Sandy'
+'Good morning, Sandy!'
+
+test∆show_log log # this must be at the end of the file so that the test results get displayed to STDERR
 ```
-# include the body of an example test
-```
+
+When in doubt, copy the format of the existing test files, or otherwise do what seems sensible.
 
 ## Opening an Issue
 
