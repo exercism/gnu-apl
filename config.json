@@ -22,7 +22,7 @@
       "uuid": "bc2c01ff-0e38-b280-5047-2014e184502c67074c0",
       "slug": "hamming",
       "core": true,
-      "difficulty": 2,
+      "difficulty": 1,
       "topics": ["strings", "arrays", "differences"]
     }
   ],
