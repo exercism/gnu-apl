@@ -1,0 +1,41 @@
+log←'./rna-transcription.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative 'rna-transcription.apl'
+test∆clear_log log
+
+⍝ ∇to_rna
+
+⍝ RNA complement of cytosine is guanine
+  1⎕CR to_rna 'C'
+'G'
+
+⍝ RNA complement of guanine is cytosine
+  to_rna 'G'
+C
+
+⍝ RNA complement of thymine is adenine
+  to_rna 'T'
+A
+
+⍝ RNA complement of adenine is uracil
+  to_rna 'A'
+U
+
+⍝ RNA complement of entire string
+  1⎕CR to_rna 'ACGTGGTCTTAA'
+'UGCACCAGAAUU'
+
+⍝ invalid input (RNA instead of DNA) throws domain error
+  1⎕CR test∆try 'to_rna "U"'
+1 'DOMAIN ERROR'
+
+⍝ completely invalid DNA input throws domain error
+  1⎕CR test∆try 'to_rna "XXX"'
+1 'DOMAIN ERROR'
+
+⍝ partially invalid DNA input throws domain error
+  1⎕CR test∆try 'to_rna "ACGTXXXCTTAA"'
+1 'DOMAIN ERROR'
+
+test∆show_log log
