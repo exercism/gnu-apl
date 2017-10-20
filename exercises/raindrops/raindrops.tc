@@ -11,27 +11,23 @@ test∆clear_log log
   1⎕CR convert 1
 '1'
 
-⍝ the sound for 3 is 'Pling'
+⍝ the sound for multiples of 3 is 'Pling'
   convert 3
 Pling
+  convert 6
+Pling
 
-⍝ the sound for 5 is 'Plang'
+⍝ the sound for multiples of 5 is 'Plang'
   convert 5
 Plang
   convert 10
 Plang
 
-⍝ the sound for 7 is 'Plong'
+⍝ the sound for multiples of 7 is 'Plong'
   convert 7
 Plong
   convert 14
 Plong
-
-⍝ the sound for multiples of 3 is 'Pling'
-  convert 6
-Pling
-  convert 9
-Pling
 
 ⍝ the sound for numbers that aren't multiples of 3, 5, or 7 is the stringified number
   1⎕CR convert 8
