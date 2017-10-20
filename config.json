@@ -45,6 +45,13 @@
       "core": true,
       "difficulty": 1,
       "topics": ["reduce", "arrays"]
+    },
+    {
+      "uuid": "a6da3d26-0b3f-cb80-478f-0da928bdbf2975c8605",
+      "slug": "pangram",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["strings", "characters"]
     }
   ],
   "deprecated": [
