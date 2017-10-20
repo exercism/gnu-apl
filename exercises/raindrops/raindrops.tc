@@ -45,7 +45,7 @@ PlangPlong
   1⎕CR convert 105 ⍝ 3×5×7
 'PlingPlangPlong'
 
-⍝ the sound for squares of a raindrop factor is only the single sound
+⍝ the sound for powers of a raindrop factor is only the single sound
   convert 9 ⍝ 3×3
 Pling
   convert 25 ⍝ 5×5
