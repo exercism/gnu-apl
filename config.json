@@ -24,6 +24,13 @@
       "core": true,
       "difficulty": 1,
       "topics": ["strings", "arrays", "differences"]
+    },
+    {
+      "uuid": "05764380-02d5-2a80-0741-3baa1e10b36b61333ec",
+      "slug": "rna-transcription",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["strings", "arrays", "substitution", "error handling"]
     }
   ],
   "deprecated": [
