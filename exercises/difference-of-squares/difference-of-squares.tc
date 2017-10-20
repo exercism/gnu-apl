@@ -24,5 +24,15 @@ test∆clear_log log
   1⎕CR sum_of_squares 100
 338350
 
+⍝ ∇difference_of_squares
+
+⍝ it returns square_of_sum minus sum_of_squares
+  1⎕CR difference_of_squares 1
+0
+  1⎕CR difference_of_squares 5
+170
+  1⎕CR difference_of_squares 100
+25164150
+
 test∆show_log log
 
