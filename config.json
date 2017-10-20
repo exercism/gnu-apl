@@ -31,6 +31,13 @@
       "core": true,
       "difficulty": 1,
       "topics": ["strings", "arrays", "substitution", "error handling"]
+    },
+    {
+      "uuid": "17c7a5fc-0666-8780-a4f6-fe32a590bb970725b2e",
+      "slug": "raindrops",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["strings", "residue", "conditions"]
     }
   ],
   "deprecated": [
