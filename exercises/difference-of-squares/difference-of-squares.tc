@@ -1,0 +1,18 @@
+log←'./difference-of-squares.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative 'difference-of-squares.apl'
+test∆clear_log log
+
+⍝ ∇square_of_sum
+
+⍝ it returns the square of the sum from 1 to the given number
+  1⎕CR square_of_sum 1
+1
+  1⎕CR square_of_sum 5 ⍝ (1+2+3+4+5)*2
+225
+  1⎕CR square_of_sum 100
+25502500
+
+test∆show_log log
+
