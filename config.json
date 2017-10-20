@@ -38,6 +38,13 @@
       "core": true,
       "difficulty": 1,
       "topics": ["strings", "residue", "conditions"]
+    },
+    {
+      "uuid": "b9d47ae7-0df7-2a80-cbe1-a40548a641756b77e3f",
+      "slug": "difference-of-squares",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["reduce", "arrays"]
     }
   ],
   "deprecated": [
