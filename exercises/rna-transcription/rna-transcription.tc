@@ -27,24 +27,15 @@ U
 'UGCACCAGAAUU'
 
 ⍝ invalid input (RNA instead of DNA) throws domain error
-  response←⎕EC 'to_rna "U"'
-  1⊃response
-0
-  (3⊃response)[1;]
-DOMAIN ERROR
+  1⎕CR test∆try 'to_rna "U"'
+1 'DOMAIN ERROR'
 
 ⍝ completely invalid DNA input throws domain error
-  response←⎕EC 'to_rna "XXX"'
-  1⊃response
-0
-  (3⊃response)[1;]
-DOMAIN ERROR
+  1⎕CR test∆try 'to_rna "XXX"'
+1 'DOMAIN ERROR'
 
 ⍝ partially invalid DNA input throws domain error
-  response←⎕EC 'to_rna "ACGTXXXCTTAA"'
-  1⊃response
-0
-  (3⊃response)[1;]
-DOMAIN ERROR
+  1⎕CR test∆try 'to_rna "ACGTXXXCTTAA"'
+1 'DOMAIN ERROR'
 
 test∆show_log log
