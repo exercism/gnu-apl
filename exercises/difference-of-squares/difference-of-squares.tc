@@ -14,5 +14,15 @@ test∆clear_log log
   1⎕CR square_of_sum 100
 25502500
 
+⍝ ∇sum_of_squares
+
+⍝ it returns the sum of the squares of the numbers from 1 to the given number
+  1⎕CR sum_of_squares 1
+1
+  1⎕CR sum_of_squares 5 ⍝ (1*2)+(2*2)+(3*2)+(4*2)+(5*2)
+55
+  1⎕CR sum_of_squares 100
+338350
+
 test∆show_log log
 
