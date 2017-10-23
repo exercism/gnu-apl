@@ -1,63 +1,83 @@
 {
-  "track_id": "gnu-apl",
-  "language": "GNU APL",
   "active": false,
-  "test_pattern": "\\.tc$",
+  "deprecated": [],
   "exercises": [
     {
-      "uuid": "81121f0c-1218-4d88-bb6c-fd9df3bc0b8d",
+      "core": true,
+      "difficulty": 1,
       "slug": "hello-world",
-      "core": true,
-      "difficulty": 1,
-      "topics": ["setup"]
+      "topics": [
+        "setup"
+      ],
+      "uuid": "81121f0c-1218-4d88-bb6c-fd9df3bc0b8d"
     },
     {
-      "uuid": "9a89822e-0d61-f980-49fa-c273c0a0e0869b9fc7f",
+      "core": true,
+      "difficulty": 1,
       "slug": "leap",
-      "core": true,
-      "difficulty": 1,
-      "topics": ["conditions", "dates"]
+      "topics": [
+        "conditions",
+        "dates"
+      ],
+      "uuid": "9a89822e-0d61-f980-49fa-c273c0a0e0869b9fc7f"
     },
     {
-      "uuid": "bc2c01ff-0e38-b280-5047-2014e184502c67074c0",
+      "core": true,
+      "difficulty": 1,
       "slug": "hamming",
-      "core": true,
-      "difficulty": 1,
-      "topics": ["strings", "arrays", "differences"]
+      "topics": [
+        "arrays",
+        "differences",
+        "strings"
+      ],
+      "uuid": "bc2c01ff-0e38-b280-5047-2014e184502c67074c0"
     },
     {
-      "uuid": "05764380-02d5-2a80-0741-3baa1e10b36b61333ec",
+      "core": true,
+      "difficulty": 1,
       "slug": "rna-transcription",
-      "core": true,
-      "difficulty": 1,
-      "topics": ["strings", "arrays", "substitution", "error handling"]
+      "topics": [
+        "arrays",
+        "error_handling",
+        "strings",
+        "substitution"
+      ],
+      "uuid": "05764380-02d5-2a80-0741-3baa1e10b36b61333ec"
     },
     {
-      "uuid": "17c7a5fc-0666-8780-a4f6-fe32a590bb970725b2e",
+      "core": true,
+      "difficulty": 1,
       "slug": "raindrops",
-      "core": true,
-      "difficulty": 1,
-      "topics": ["strings", "residue", "conditions"]
+      "topics": [
+        "conditions",
+        "residue",
+        "strings"
+      ],
+      "uuid": "17c7a5fc-0666-8780-a4f6-fe32a590bb970725b2e"
     },
     {
-      "uuid": "b9d47ae7-0df7-2a80-cbe1-a40548a641756b77e3f",
+      "core": true,
+      "difficulty": 1,
       "slug": "difference-of-squares",
-      "core": true,
-      "difficulty": 1,
-      "topics": ["reduce", "arrays"]
+      "topics": [
+        "arrays",
+        "reduce"
+      ],
+      "uuid": "b9d47ae7-0df7-2a80-cbe1-a40548a641756b77e3f"
     },
     {
-      "uuid": "a6da3d26-0b3f-cb80-478f-0da928bdbf2975c8605",
-      "slug": "pangram",
       "core": true,
       "difficulty": 1,
-      "topics": ["strings", "characters"]
+      "slug": "pangram",
+      "topics": [
+        "characters",
+        "strings"
+      ],
+      "uuid": "a6da3d26-0b3f-cb80-478f-0da928bdbf2975c8605"
     }
   ],
-  "deprecated": [
-
-  ],
-  "foregone": [
-
-  ]
+  "foregone": [],
+  "language": "GNU APL",
+  "test_pattern": "\\.tc$",
+  "track_id": "gnu-apl"
 }
