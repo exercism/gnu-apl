@@ -84,7 +84,7 @@ For the Exercism-specific linting, please see [the documentation](https://github
 
 Please see the documentation about [adding new exercises](https://github.com/exercism/docs/blob/master/you-can-help/make-up-new-exercises.md).
 
-Note that:
+Useful notes:
 
 - Each exercise must stand on its own. Do not reference files outside the exercise directory (except for the supplied test.apl). They will not be included when the user fetches the exercise.
 - Exercises should use only the GNU APL core language. If it is feasible, they should be portable to other APL interpreters too (such as Dyalog). This shouldn't be hard in most cases, since GNU APL adheres closely to the ISO 13751 standard.
