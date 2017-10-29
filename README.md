@@ -79,7 +79,7 @@ All the tests for GNU APL exercises can be run from the top level of the repo wi
 bin/run-all-tests
 ```
 
-For the Exercism-specific linting, please see [the documentation](https://github.com/exercism/docs/blob/master/language-tracks/configuration/linting.md).
+For the Exercism-specific linting, please see [the documentation](https://github.com/exercism/docs/blob/a8ea5db92e2a2d2839e66ec10c7687b3b7db002a/language-tracks/configuration/configlet.md).
 
 ## Contributing a New Exercise
 
