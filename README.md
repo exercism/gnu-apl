@@ -6,9 +6,17 @@ Exercism exercises in GNU APL.
 
 ## Setup
 
+### Installing GNU APL
+
 On MacOS, GNU APL is available as a [Homebrew](http://brew.sh) formula; just type `brew install gnu-apl` to install it.
 
 On other operating systems, the simplest way to install GNU APL is probably to follow the instructions on the [GNU APL website](https://www.gnu.org/software/apl/). Note that version 1.7 seems to have build issues on some systems; if you can't build 1.7, then 1.6 should work.
+
+### Installing a keyboard layout
+
+APL uses many symbols that don't appear on most keyboard layouts, so you'll probably want to install an APL keyboard layout. The keyboard layouts from [Dyalog](https://www.dyalog.com) seem to work well, and are available for free download for all modern operating systems at https://www.dyalog.com/apl-font-keyboard.htm, where you can also get fonts optimized for APL code (and even physical keyboards with APL symbols on them).
+
+
 
 ## Contributing
 
