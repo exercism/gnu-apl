@@ -14,7 +14,7 @@ On other operating systems, the simplest way to install GNU APL is probably to f
 
 ### Installing a keyboard layout
 
-APL uses many symbols that don't appear on most keyboard layouts, so you'll probably want to install an APL keyboard layout. The keyboard layouts from [Dyalog](https://www.dyalog.com) seem to work well, and are available for free download for all modern operating systems at https://www.dyalog.com/apl-font-keyboard.htm, where you can also get fonts optimized for APL code (and even physical keyboards with APL symbols on them).
+APL uses many symbols that don't appear on most keyboard layouts, so you'll probably want to install an APL keyboard layout. The [keyboard layouts from Dyalog](https://www.dyalog.com/apl-font-keyboard.htm) seem to work well, and are available for free download for all modern operating systems at. The same page also has links to fonts optimized for APL code (and even ordering information for physical keyboards with APL symbols on them).
 
 
 
