@@ -1,0 +1,60 @@
+log←'./raindrops.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative 'raindrops.apl'
+test∆clear_log log
+
+⍝ ∇convert
+⍝ Given an integer, returns a string representation of that integer's "raindrop sound", based on its prime factors.
+
+⍝ the sound for 1 is '1'
+  1⎕CR convert 1
+'1'
+
+⍝ the sound for multiples of 3 is 'Pling'
+  convert 3
+Pling
+  convert 6
+Pling
+
+⍝ the sound for multiples of 5 is 'Plang'
+  convert 5
+Plang
+  convert 10
+Plang
+
+⍝ the sound for multiples of 7 is 'Plong'
+  convert 7
+Plong
+  convert 14
+Plong
+
+⍝ the sound for numbers that aren't multiples of 3, 5, or 7 is the stringified number
+  1⎕CR convert 8
+'8'
+  1⎕CR convert 52
+'52'
+
+⍝ the sound for numbers that have multiple raindrop factors is the combination of all the sounds
+  convert 15 ⍝ 3×5
+PlingPlang
+  convert 21 ⍝ 3×7
+PlingPlong
+  convert 35 ⍝ 5×7
+PlangPlong
+  1⎕CR convert 105 ⍝ 3×5×7
+'PlingPlangPlong'
+
+⍝ the sound for powers of a raindrop factor is only the single sound
+  convert 9 ⍝ 3×3
+Pling
+  convert 25 ⍝ 5×5
+Plang
+  convert 49 ⍝ 7×7
+Plong
+  convert 27 ⍝ 3*3
+Pling
+  convert 3125 ⍝ 5*5
+Plang
+
+test∆show_log log

@@ -1,0 +1,75 @@
+log←'./hamming.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative 'hamming.apl'
+test∆clear_log log
+
+⍝ ∇distance
+
+⍝ empty strands
+  1⎕CR '' distance ''
+0
+
+⍝ identical strands
+  1⎕CR 'A' distance 'A'
+0
+
+⍝ long identical strands
+  1⎕CR 'GGACTGA' distance 'GGACTGA'
+0
+
+⍝ complete distance in single-nucleotide strands
+  1⎕CR 'A' distance 'G'
+1
+
+⍝ complete distance in small strands
+  'AG' distance 'CT'
+2
+
+⍝ small distance in small strands
+  'AT' distance 'CT'
+1
+
+⍝ small distance
+  'GGACG' distance 'GGTCG'
+1
+
+⍝ small distance in long strands
+  'ACCAGGG' distance 'ACTATGG'
+2
+
+⍝ non-unique character in first strand
+  'AGA' distance 'AGG'
+1
+
+⍝ non-unique character in second strand
+  'AGG' distance 'AGA'
+1
+
+⍝ same nucleotides in different positions
+  'TAG' distance 'GAT'
+2
+
+⍝ large distance
+  'GATACA' distance 'GCATAA'
+4
+
+⍝ large distance in off-by-one strand
+  'GGACGGATTCTG' distance 'AGGACGGATTCT'
+9
+
+⍝ disallow first strand longer
+  1⎕CR test∆try '''AATG'' distance ''AAA'''
+1 'LENGTH ERROR'
+
+⍝ disallow single vs. multiple letters
+  1⎕CR test∆try '''AATG'' distance ''A'''
+1 'LENGTH ERROR'
+  1⎕CR test∆try '''A'' distance ''AAA'''
+1 'LENGTH ERROR'
+
+⍝ disallow second strand longer
+  1⎕CR test∆try '''ATA'' distance ''AGTG'''
+1 'LENGTH ERROR'
+
+test∆show_log log

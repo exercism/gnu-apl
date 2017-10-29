@@ -1,0 +1,40 @@
+log←'./pangram.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative 'pangram.apl'
+test∆clear_log log
+
+⍝ ∇is_pangram
+
+⍝ it returns false for a null vector
+  1⎕CR is_pangram ''
+0
+⍝ it recognizes a perfect lower case pangram
+  1⎕CR is_pangram 'abcdefghijklmnopqrstuvwxyz'
+1
+⍝ pangram with only lower case: true
+  1⎕CR is_pangram 'the quick brown fox jumps over the lazy dog'
+1
+⍝ missing character 'x': false
+  is_pangram 'a quick movement of the enemy will jeopardize five gunboats'
+0
+⍝ missing 'h': false
+  is_pangram 'five boxing wizards jump quickly at it'
+0
+
+⍝ pangram with non-alphabetic characters: true
+  is_pangram 'the_quick_brown_fox_jumps_over_the_lazy_dog'
+1
+  is_pangram 'the 1 quick brown fox jumps over the 2 lazy dogs'
+1
+⍝ letters missing, replaced by numbers: false
+  is_pangram '7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog'
+0
+⍝ pangram with mixed case and punctuation: true
+  is_pangram '"Five quacking Zephyrs jolt my wax bed."'
+1
+⍝ non-pangram with upper- and lowercase versions of same letter: false
+  is_pangram "the quick brown fox jumps over with lazy FX"
+0
+
+test∆show_log log

@@ -18,6 +18,19 @@
   test¯warn test¯read_unicode filename
 ∇
 
+⍝ Evaluate APL code (as string).
+⍝ Returns 2-element vector:
+⍝ [1] Boolean (1 if error, 0 if not).
+⍝ [2] Error message if error; original result if not.
+∇z←test∆try apl_string;response;is_error;result
+  response←⎕EC apl_string
+  is_error←0=1⊃response
+  result←3⊃response
+  →(~is_error)/return
+  result←result[1;]
+  return: z←is_error result
+∇
+
 ⍝ private
 
 ⍝ Return current directory as a string.

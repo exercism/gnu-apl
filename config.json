@@ -17,6 +17,41 @@
       "core": true,
       "difficulty": 1,
       "topics": ["conditions", "dates"]
+    },
+    {
+      "uuid": "bc2c01ff-0e38-b280-5047-2014e184502c67074c0",
+      "slug": "hamming",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["strings", "arrays", "differences"]
+    },
+    {
+      "uuid": "05764380-02d5-2a80-0741-3baa1e10b36b61333ec",
+      "slug": "rna-transcription",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["strings", "arrays", "substitution", "error handling"]
+    },
+    {
+      "uuid": "17c7a5fc-0666-8780-a4f6-fe32a590bb970725b2e",
+      "slug": "raindrops",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["strings", "residue", "conditions"]
+    },
+    {
+      "uuid": "b9d47ae7-0df7-2a80-cbe1-a40548a641756b77e3f",
+      "slug": "difference-of-squares",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["reduce", "arrays"]
+    },
+    {
+      "uuid": "a6da3d26-0b3f-cb80-478f-0da928bdbf2975c8605",
+      "slug": "pangram",
+      "core": true,
+      "difficulty": 1,
+      "topics": ["strings", "characters"]
     }
   ],
   "deprecated": [
