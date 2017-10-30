@@ -1,7 +1,7 @@
 language: bash
 
 before_install:
-  - bin/install-apl
+  - sudo bin/install-apl
   - cp -rv .travis/.gnu-apl ~
   - bin/fetch-configlet
 
