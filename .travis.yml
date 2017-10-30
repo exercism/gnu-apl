@@ -1,5 +1,9 @@
 language: bash
 
+env:
+  - APL_VERSION=1.6
+  - APL_VERSION=1.7
+
 before_install:
   - sudo bin/install-apl
   - cp -rv .travis/.gnu-apl ~
