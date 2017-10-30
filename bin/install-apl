@@ -1,0 +1,4 @@
+#!/bin/bash
+
+wget ftp://ftp.gnu.org/gnu/apl/apl_1.6-1_amd64.deb
+dpkg -i apl_1.6-1_amd64.deb
