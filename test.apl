@@ -14,7 +14,7 @@
 
 ⍝ Write logfile with given filename to stderr as UTF-8.
 ∇test∆show_log filename;cr
-  cr←⎕ucs 10
+  cr←⎕UCS 10
   test¯warn cr,'***** TEST LOG *****',cr,cr
   test¯warn test¯read_unicode filename
 ∇
