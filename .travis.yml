@@ -1,3 +1,6 @@
+services:
+  - docker
+
 language: bash
 
 env:
@@ -5,10 +8,8 @@ env:
   - APL_VERSION=1.7
 
 before_install:
-  - sudo bin/install-apl
-  - cp -rv .travis/.gnu-apl ~
-  - bin/fetch-configlet
+  - docker build . -t apl --build-arg apl_version=${APL_VERSION}
 
 script:
-  - bin/configlet lint .
-  - bin/run-all-tests
+  - docker run apl 'bin/configlet lint .'
+  - docker run apl 'bin/run-all-tests'
