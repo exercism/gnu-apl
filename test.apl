@@ -1,9 +1,10 @@
 #!/usr/bin/env apl --script
+)COPY 5 FILE_IO.apl
 
 ⍝ Clear logfile with given filename.
 ∇test∆clear_log filename;handle;_
-  handle←'w' ⎕FIO[3] filename
-  _←⎕FIO[4] handle
+  handle←'w' FIO∆fopen filename
+  _←FIO∆fclose handle
 ∇
 
 ⍝ )COPY file relative to current directory.
@@ -35,15 +36,15 @@
 
 ⍝ Return current directory as a string.
 ∇pwd←test¯pwd
-  pwd←⎕FIO 30
+  pwd←FIO∆getcwd
 ∇
 
 ⍝ Read a UTF-8 file into a Unicode character vector.
 ∇unicode←test¯read_unicode filename
-  unicode←19⎕CR ⎕FIO[26] filename
+  unicode←19⎕CR FIO∆read_file filename
 ∇
 
 ⍝ Write string to stderr.
 ∇test¯warn string;_
-  _←'%s' string ⎕FIO[22] 2
+  _←FIO∆fprintf_stderr '%s' string
 ∇
