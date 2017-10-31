@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set_apl_filename() {
+  APL_DEB=apl_${APL_VERSION}-1_amd64.deb
+}
+
+fetch_apl() {
+  set_apl_filename
+  wget ftp://ftp.gnu.org/gnu/apl/${APL_DEB}
+}
+
+install_apl() {
+  set_apl_filename
+  dpkg -i ${APL_DEB} && rm ${APL_DEB}
+}

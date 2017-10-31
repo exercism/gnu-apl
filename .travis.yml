@@ -8,6 +8,8 @@ env:
   - APL_VERSION=1.7
 
 before_install:
+  - source .travis/installer
+  - fetch_apl
   - docker build . -t apl --build-arg apl_version=${APL_VERSION}
 
 script:
