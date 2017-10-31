@@ -8,9 +8,9 @@ env:
   - APL_VERSION=1.7
 
 before_install:
-  - source .travis/installer
-  - fetch_apl
-  - docker build . -t apl --build-arg apl_version=${APL_VERSION}
+  - export APL_DEB=apl_${APL_VERSION}-1_amd64.deb
+  - wget ftp://ftp.gnu.org/gnu/apl/${APL_DEB}
+  - docker build . -t apl --build-arg apl_deb=${APL_DEB}
 
 script:
   - docker run apl 'bin/configlet lint .'
