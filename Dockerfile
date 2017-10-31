@@ -7,4 +7,3 @@ ADD . /gnu-apl
 COPY .travis/.gnu-apl ~
 RUN dpkg -i ${apl_deb}
 RUN rm ${apl_deb}
-RUN bin/fetch-configlet
