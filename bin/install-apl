@@ -5,7 +5,7 @@ DOCKERFILE_PATH=Dockerfiles
 prepare_svn_install() {
   SVN_REV=${APL_VERSION#svn}q
   APL_DIR=apl-src
-  svn co svn://svn.savannah.gnu.org/apl/trunk $APL_DIR
+  svn co "svn://svn.savannah.gnu.org/apl/trunk@${SVN_REV}" $APL_DIR
   BUILD_ARGS="--build-arg apl_dir=${APL_DIR}"
   DOCKERFILE=svn.dockerfile
 }
