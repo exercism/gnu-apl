@@ -1,5 +1,5 @@
 FROM ubuntu:xenial
-MAINTAINER marnen@marnen.org
+LABEL maintainer="marnen@marnen.org"
 
 ARG apl_deb
 WORKDIR /gnu-apl
