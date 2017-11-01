@@ -8,7 +8,6 @@ env:
   - APL_VERSION=svn945 # fixes a bug in 1.7 release; see https://lists.gnu.org/archive/html/bug-apl/2017-05/msg00016.html
 
 before_install:
-  - cp -rv .travis/.gnu-apl ~
   - bin/install-apl
   - bin/fetch-configlet
 
