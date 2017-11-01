@@ -9,9 +9,9 @@ WORKDIR ${base_dir}
 ADD . ${base_dir}
 
 WORKDIR ${apl_dir}
-RUN ./configure
+RUN ./configure --prefix /usr
 RUN make
-RUN make install --prefix /usr
+RUN make install
 
 WORKDIR ${base_dir}
 RUN rm -r ${apl_dir}
