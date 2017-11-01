@@ -11,7 +11,7 @@ ADD . ${base_dir}
 WORKDIR ${apl_dir}
 RUN ./configure
 RUN make
-RUN make install
-RUN rm -r ${base_dir}/${apl_dir}
+RUN make install --prefix /usr
 
 WORKDIR ${base_dir}
+RUN rm -r ${apl_dir}
