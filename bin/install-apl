@@ -1,0 +1,27 @@
+#!/bin/bash
+
+BUILD=docker build
+DOCKERFILE_PATH=Dockerfiles
+
+prepare_svn_install() {
+  SVN_REV=${APL_VERSION#svn}q
+  APL_DIR=${PWD}/apl-src
+  svn co svn://svn.savannah.gnu.org/apl/trunk $APL_DIR
+  BUILD_ARGS=--build-arg apl_dir=${APL_DIR}
+  DOCKERFILE=svn.dockerfile
+}
+
+prepare_release_install() {
+  APL_DEB=apl_${APL_VERSION}-1_amd64.deb
+  wget ftp://ftp.gnu.org/gnu/apl/${APL_DEB}
+  BUILD_ARGS=--build-arg apl_deb=${APL_DEB}
+  DOCKERFILE=release.dockerfile
+}
+
+if [[ ${APL_VERSION} =~ ^svn ]]; then
+  prepare_svn_install
+else
+  prepare_release_install
+fi
+
+docker build ${DOCKERFILE_PATH}/${DOCKERFILE} -t apl ${BUILD_ARGS}

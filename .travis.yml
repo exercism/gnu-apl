@@ -5,13 +5,11 @@ language: bash
 
 env:
   - APL_VERSION=1.6
-  - APL_VERSION=1.7
+  - APL_VERSION=svn945 # fixes a bug in 1.7 release; see https://lists.gnu.org/archive/html/bug-apl/2017-05/msg00016.html
 
 before_install:
   - cp -rv .travis/.gnu-apl ~
-  - export APL_DEB=apl_${APL_VERSION}-1_amd64.deb
-  - wget ftp://ftp.gnu.org/gnu/apl/${APL_DEB}
-  - docker build . -t apl --build-arg apl_deb=${APL_DEB}
+  - bin/install-apl
   - bin/fetch-configlet
 
 script:
