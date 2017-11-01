@@ -23,4 +23,4 @@ else
   prepare_release_install
 fi
 
-docker build ${DOCKERFILE_PATH}/${DOCKERFILE} -t apl ${BUILD_ARGS}
+docker build -f ${DOCKERFILE_PATH}/${DOCKERFILE} -t apl ${BUILD_ARGS} .
