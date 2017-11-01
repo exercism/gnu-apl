@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 LABEL maintainer="marnen@marnen.org"
 
-RUN apt-get update && apt-get install -y g++
+RUN apt-get update && apt-get install -y g++ build-essential
 
 ARG apl_dir
 WORKDIR /gnu-apl
