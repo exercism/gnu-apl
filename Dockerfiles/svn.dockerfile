@@ -1,9 +1,7 @@
 FROM ubuntu:xenial
+LABEL maintainer="marnen@marnen.org"
 
 ARG apl_dir
-
-RUN apt-get install -y g++
-
 WORKDIR /gnu-apl
 ADD . /gnu-apl
 
