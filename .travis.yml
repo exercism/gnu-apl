@@ -13,4 +13,4 @@ before_install:
 
 script:
   - bin/configlet lint .
-  - docker run apl 'bin/run-all-tests'
+  - docker run apl 'bin/run-all-tests 2>&1'
