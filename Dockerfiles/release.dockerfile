@@ -9,5 +9,5 @@ RUN apt-get update -y
 RUN dpkg -i ${apl_deb}
 RUN rm ${apl_deb}
 
-ADD .travis/.gnu-apl ~/.gnu-apl # 1.6 and before
-ADD .travis/.gnu-apl ~/.config/gnu-apl
+ADD .travis/.gnu-apl ~/.gnu-apl/ # 1.6 and before
+ADD .travis/.gnu-apl ~/.config/gnu-apl/
