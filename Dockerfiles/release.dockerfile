@@ -10,6 +10,6 @@ RUN dpkg -i ${apl_deb}
 RUN rm ${apl_deb}
 
 # 1.6 and before
-ADD .travis/.gnu-apl ~/.gnu-apl/
+COPY .travis/.gnu-apl /etc/gnu-apl/
 # 1.7 and later
-ADD .travis/.gnu-apl ~/.config/gnu-apl/
+COPY .travis/.gnu-apl /etc/gnu-apl.d/

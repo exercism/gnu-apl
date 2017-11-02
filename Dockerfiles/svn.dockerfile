@@ -17,6 +17,6 @@ WORKDIR ${base_dir}
 RUN rm -r ${apl_dir}
 
 # 1.6 and before
-COPY .travis/.gnu-apl ~/.gnu-apl/
+COPY .travis/.gnu-apl /etc/gnu-apl/
 # 1.7 and later
-COPY .travis/.gnu-apl ~/.config/gnu-apl/
+COPY .travis/.gnu-apl /etc/gnu-apl.d/
