@@ -16,4 +16,4 @@ RUN make install
 WORKDIR ${base_dir}
 RUN rm -r ${apl_dir}
 
-ADD .travis/.gnu-apl /etc/.gnu-apl.d
+ADD .travis/.gnu-apl /etc/gnu-apl.d
