@@ -10,7 +10,7 @@ Exercism exercises in GNU APL.
 
 On MacOS, GNU APL is available as a [Homebrew](http://brew.sh) formula; just type `brew install gnu-apl` to install it.
 
-On other operating systems, the simplest way to install GNU APL is probably to follow the instructions on the [GNU APL website](https://www.gnu.org/software/apl/). Note that version 1.7 seems to have build issues on some systems; if you can't build 1.7, then 1.6 should work.
+On other operating systems, the simplest way to install GNU APL is probably to follow the instructions on the [GNU APL website](https://www.gnu.org/software/apl/). Version 1.6 works, but version 1.7 [has some bugs involving the `)COPY` system command](https://lists.gnu.org/archive/html/bug-apl/2017-05/msg00016.html) that prevent it from working for Exercism. If you want 1.7 features for Exercism, then build it from source at SVN commit 945 (when the bug was fixed) or later.
 
 ### Installing a keyboard layout
 
