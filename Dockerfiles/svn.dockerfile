@@ -16,5 +16,7 @@ RUN make install
 WORKDIR ${base_dir}
 RUN rm -r ${apl_dir}
 
-ADD .travis/.gnu-apl/ /etc/gnu-apl/ # 1.6 and before
-ADD .travis/.gnu-apl/ /etc/gnu-apl.d/
+# 1.6 and before
+COPY .travis/.gnu-apl ~/.gnu-apl/
+# 1.7 and later
+COPY .travis/.gnu-apl ~/.config/gnu-apl/
