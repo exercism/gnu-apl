@@ -9,7 +9,7 @@ WORKDIR ${base_dir}
 ADD . ${base_dir}
 
 WORKDIR ${apl_dir}
-RUN ./configure --prefix /usr
+RUN ./configure --prefix=/usr --sysconfdir=/etc
 RUN make
 RUN make install
 
