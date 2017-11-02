@@ -1,11 +1,16 @@
+services:
+  - docker
+
 language: bash
 
+env:
+  - APL_VERSION=1.6
+  - APL_VERSION=svn945 # fixes a bug in 1.7 release; see https://lists.gnu.org/archive/html/bug-apl/2017-05/msg00016.html
+
 before_install:
-  - wget ftp://ftp.gnu.org/gnu/apl/apl_1.6-1_amd64.deb
-  - sudo dpkg -i apl_1.6-1_amd64.deb
-  - cp -rv .travis/.gnu-apl ~
+  - bin/install-apl
   - bin/fetch-configlet
 
 script:
   - bin/configlet lint .
-  - bin/run-all-tests
+  - docker run apl 'bin/run-all-tests'
