@@ -1,0 +1,49 @@
+log←'./isogram.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative 'isogram.apl'
+test∆clear_log log
+
+⍝ check test version
+  1⎕CR	(version)
+'1.2.0'
+
+⍝ ∇isIsogram
+
+⍝ empty string
+  1⎕CR	(isIsogram '')
+1
+
+⍝ isogram with only lower case characters
+  1⎕CR	(isIsogram 'isogram')
+1
+
+⍝ word with one duplicated character
+  1⎕CR	(isIsogram 'eleven')
+0
+
+⍝ longest reported english isogram
+  1⎕CR	(isIsogram 'subdermatoglyphic')
+1
+
+⍝ word with duplicated character in mixed case
+  1⎕CR	(isIsogram 'Alphabet')
+0
+
+⍝ hypothetical isogrammic word with hyphen
+  1⎕CR	(isIsogram 'thumbscrew-japingly')
+1
+
+⍝ isogram with duplicated hyphen
+  1⎕CR	(isIsogram 'six-year-old')
+1
+
+⍝ made-up name that is an isogram
+  1⎕CR	(isIsogram 'Emily Jung Schwartzkopf')
+1
+
+⍝ duplicated character in the middle
+  1⎕CR	(isIsogram 'accentor')
+0
+
+test∆show_log log
