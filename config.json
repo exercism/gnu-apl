@@ -12,42 +12,42 @@
       "topics": ["setup"]
     },
     {
-      "uuid": "9a89822e-0d61-f980-49fa-c273c0a0e0869b9fc7f",
+      "uuid": "edf36b1a-3f20-4d63-a919-55a2bd063a2f",
       "slug": "leap",
       "core": true,
       "difficulty": 1,
       "topics": ["conditions", "dates"]
     },
     {
-      "uuid": "bc2c01ff-0e38-b280-5047-2014e184502c67074c0",
+      "uuid": "4ddbc20a-46dc-4e00-b472-0e108bab3481",
       "slug": "hamming",
       "core": true,
       "difficulty": 1,
       "topics": ["strings", "arrays", "differences"]
     },
     {
-      "uuid": "05764380-02d5-2a80-0741-3baa1e10b36b61333ec",
+      "uuid": "4fbbeab4-2e54-4549-b78b-4c9ec1fea9c0",
       "slug": "rna-transcription",
       "core": true,
       "difficulty": 1,
       "topics": ["strings", "arrays", "substitution", "error handling"]
     },
     {
-      "uuid": "17c7a5fc-0666-8780-a4f6-fe32a590bb970725b2e",
+      "uuid": "c5f5231d-dce9-4684-9d66-c8a462fecae9",
       "slug": "raindrops",
       "core": true,
       "difficulty": 1,
       "topics": ["strings", "residue", "conditions"]
     },
     {
-      "uuid": "b9d47ae7-0df7-2a80-cbe1-a40548a641756b77e3f",
+      "uuid": "0a5c1f23-8f3f-479c-8ed5-ce21361daa20",
       "slug": "difference-of-squares",
       "core": true,
       "difficulty": 1,
       "topics": ["reduce", "arrays"]
     },
     {
-      "uuid": "a6da3d26-0b3f-cb80-478f-0da928bdbf2975c8605",
+      "uuid": "7d52c43e-d193-4c90-a91b-0e6ee605cccb",
       "slug": "pangram",
       "core": true,
       "difficulty": 1,
