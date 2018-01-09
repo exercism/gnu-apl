@@ -52,7 +52,7 @@
       "core": true,
       "difficulty": 1,
       "topics": ["strings", "characters"]
-    }
+    },
     {
       "uuid": "535ec2df-c4f9-4638-82b8-a3f9caec9e37",
       "slug": "isogram",
