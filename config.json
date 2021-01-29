@@ -3,6 +3,7 @@
   "language": "GNU APL",
   "active": false,
   "blurb": "",
+  "version": 3,
   "test_pattern": "\\.tc$",
   "exercises": [
     {
