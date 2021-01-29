@@ -35,7 +35,7 @@ We are currently using GNU APL's testing framework, with some extra tooling foun
 
 ```apl
 log←'./<exercise-name>.tc.log'
-⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+⍎ ')COPY ',(⎕FIO 30),'/https://github.com/exercism/v3/blob/main/test.apl'
 
 test∆copy_relative '<exercise-name>.apl'
 test∆clear_log log
