@@ -20,9 +20,6 @@
     {
       "slug": "hello-world",
       "uuid": "81121f0c-1218-4d88-bb6c-fd9df3bc0b8d",
-      "core": true,
-      "auto_approve": true,
-      "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "setup"
@@ -31,8 +28,6 @@
     {
       "slug": "leap",
       "uuid": "edf36b1a-3f20-4d63-a919-55a2bd063a2f",
-      "core": true,
-      "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "conditions",
@@ -42,8 +37,6 @@
     {
       "slug": "hamming",
       "uuid": "4ddbc20a-46dc-4e00-b472-0e108bab3481",
-      "core": true,
-      "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "arrays",
@@ -54,8 +47,6 @@
     {
       "slug": "rna-transcription",
       "uuid": "4fbbeab4-2e54-4549-b78b-4c9ec1fea9c0",
-      "core": true,
-      "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "arrays",
@@ -67,8 +58,6 @@
     {
       "slug": "raindrops",
       "uuid": "c5f5231d-dce9-4684-9d66-c8a462fecae9",
-      "core": true,
-      "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "conditions",
@@ -79,8 +68,6 @@
     {
       "slug": "difference-of-squares",
       "uuid": "0a5c1f23-8f3f-479c-8ed5-ce21361daa20",
-      "core": true,
-      "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "arrays",
@@ -91,8 +78,6 @@
     {
       "slug": "pangram",
       "uuid": "7d52c43e-d193-4c90-a91b-0e6ee605cccb",
-      "core": true,
-      "unlocked_by": null,
       "difficulty": 1,
       "topics": [
         "characters",
