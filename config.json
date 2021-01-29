@@ -2,6 +2,12 @@
   "track_id": "gnu-apl",
   "language": "GNU APL",
   "active": false,
+  "status": {
+    "concept_exercises": false,
+    "test_runner": false,
+    "representer": false,
+    "analyzer": false
+  },
   "blurb": "",
   "version": 3,
   "test_pattern": "\\.tc$",
