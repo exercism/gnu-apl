@@ -1,6 +1,7 @@
 {
   "track_id": "gnu-apl",
   "language": "GNU APL",
+  "slug": "gnu-apl",
   "active": false,
   "status": {
     "concept_exercises": false,
