@@ -17,6 +17,7 @@
   },
   "test_pattern": "\\.tc$",
   "exercises": {
+    "concept": [],
     "practice": [
       {
         "slug": "hello-world",
