@@ -19,6 +19,7 @@
   "exercises": [
     {
       "slug": "hello-world",
+      "name": "Hello World",
       "uuid": "81121f0c-1218-4d88-bb6c-fd9df3bc0b8d",
       "difficulty": 1,
       "topics": [
@@ -27,6 +28,7 @@
     },
     {
       "slug": "leap",
+      "name": "Leap",
       "uuid": "edf36b1a-3f20-4d63-a919-55a2bd063a2f",
       "difficulty": 1,
       "topics": [
@@ -36,6 +38,7 @@
     },
     {
       "slug": "hamming",
+      "name": "Hamming",
       "uuid": "4ddbc20a-46dc-4e00-b472-0e108bab3481",
       "difficulty": 1,
       "topics": [
@@ -46,6 +49,7 @@
     },
     {
       "slug": "rna-transcription",
+      "name": "Rna Transcription",
       "uuid": "4fbbeab4-2e54-4549-b78b-4c9ec1fea9c0",
       "difficulty": 1,
       "topics": [
@@ -57,6 +61,7 @@
     },
     {
       "slug": "raindrops",
+      "name": "Raindrops",
       "uuid": "c5f5231d-dce9-4684-9d66-c8a462fecae9",
       "difficulty": 1,
       "topics": [
@@ -67,6 +72,7 @@
     },
     {
       "slug": "difference-of-squares",
+      "name": "Difference Of Squares",
       "uuid": "0a5c1f23-8f3f-479c-8ed5-ce21361daa20",
       "difficulty": 1,
       "topics": [
@@ -77,6 +83,7 @@
     },
     {
       "slug": "pangram",
+      "name": "Pangram",
       "uuid": "7d52c43e-d193-4c90-a91b-0e6ee605cccb",
       "difficulty": 1,
       "topics": [
