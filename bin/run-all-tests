@@ -9,7 +9,7 @@ cp --recursive exercises $TMP
 
 for exercise in ${TMP}/*; do
   pushd $exercise
-  for example in *-example.apl; do
+  for example in .meta/*-example.apl; do
     mv $example ${example/-example/}
   done
   if ! ${APL} ${APL_OPTS} -T *.tc; then
