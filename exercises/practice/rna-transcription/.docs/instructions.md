@@ -1,4 +1,4 @@
-# RNA Transcription
+# Instructions
 
 Given a DNA strand, return its RNA complement (per RNA transcription).
 
@@ -17,9 +17,3 @@ each nucleotide with its complement:
 * `C` -> `G`
 * `T` -> `A`
 * `A` -> `U`
-## Source
-
-Hyperphysics [http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html](http://hyperphysics.phy-astr.gsu.edu/hbase/Organic/transcription.html)
-
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.

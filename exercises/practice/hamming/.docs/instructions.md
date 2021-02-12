@@ -1,4 +1,4 @@
-# Hamming
+# Instructions
 
 Calculate the Hamming Distance between two DNA strands.
 
@@ -22,9 +22,3 @@ The Hamming distance is only defined for sequences of equal length, so
 an attempt to calculate it between sequences of different lengths should
 not work. The general handling of this situation (e.g., raising an
 exception vs returning a special value) may differ between languages.
-## Source
-
-The Calculating Point Mutations problem at Rosalind [http://rosalind.info/problems/hamm/](http://rosalind.info/problems/hamm/)
-
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
