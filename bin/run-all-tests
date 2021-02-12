@@ -5,7 +5,7 @@ APL=/usr/bin/apl
 APL_OPTS='--silent --Color'
 TMP=tmp
 
-cp --recursive exercises $TMP
+cp --recursive exercises/practice $TMP
 
 for exercise in ${TMP}/*; do
   pushd $exercise
