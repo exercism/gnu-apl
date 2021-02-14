@@ -5,13 +5,15 @@ APL=/usr/bin/apl
 APL_OPTS='--silent --Color'
 TMP=tmp
 
-cp --recursive exercises $TMP
+cp --recursive exercises/practice $TMP
 
 for exercise in ${TMP}/*; do
   pushd $exercise
+  pushd .meta
   for example in *-example.apl; do
-    mv $example ${example/-example/}
+    mv $example ../${example/-example/}
   done
+  popd
   if ! ${APL} ${APL_OPTS} -T *.tc; then
     STATUS=1
   fi

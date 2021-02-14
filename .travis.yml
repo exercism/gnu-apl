@@ -12,5 +12,5 @@ before_install:
   - bin/fetch-configlet
 
 script:
-  - bin/configlet lint .
+  - bin/configlet lint
   - docker run apl 'bin/run-all-tests'
