@@ -16,6 +16,20 @@
     "indent_size": 4
   },
   "test_pattern": "\\.tc$",
+  "files": {
+    "solution": [
+      "%{kebab_slug}.apl"
+    ],
+    "test": [
+      "%{kebab_slug}.tc"
+    ],
+    "example": [
+      ".meta/%{kebab_slug}-example.apl"
+    ],
+    "exemplar": [
+      ".meta/%{kebab_slug}-exemplar.apl"
+    ]
+  },
   "exercises": {
     "concept": [],
     "practice": [
