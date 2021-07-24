@@ -1,7 +1,7 @@
 #!/bin/bash
 
 STATUS=0
-APL=/usr/bin/apl
+APL=${APL:-"/usr/bin/apl"}
 APL_OPTS='--silent --Color'
 TMP=tmp
 
