@@ -1,0 +1,13 @@
+log←'./anagram.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative 'anagram.apl'
+test∆clear_log log
+
+⍝ ∇is_anagram_of
+
+⍝ it returns ('inlets' 'tinsel')
+  ((⊂word) is_anagram_of ¨ candidates)/candidates
+ inlets tinsel 
+
+test∆show_log log

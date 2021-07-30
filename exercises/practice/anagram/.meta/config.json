@@ -1,0 +1,22 @@
+{
+  "blurb": "Anagram Finder",
+  "authors": [
+    "russtopia"
+  ],
+  "contributors": [
+    "russtopia"
+  ],
+  "files": {
+    "solution": [
+      "anagram.apl"
+    ],
+    "test": [
+      "anagram.tc"
+    ],
+    "example": [
+      ".meta/anagram-example.apl"
+    ]
+  },
+  "source": "This is an exercise to learn how to use the APL grade-up (⍋), enclose (⊂) functions, and the each (¨) operator",
+  "source_url": "https://en.wikipedia.org/wiki/Anagram"
+}
