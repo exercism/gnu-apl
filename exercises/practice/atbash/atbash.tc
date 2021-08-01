@@ -1,0 +1,40 @@
+log←'./atbash.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative 'atbash.apl'
+test∆clear_log log
+
+
+⍝ ∇atbash∆encipher
+
+⍝ it returns 'gvhg'
+  atbash∆encipher 'test'
+gvhg
+
+
+⍝ ∇atbash∆decipher
+
+⍝ it returns 'test'
+  atbash∆decipher 'gvhg'
+test
+
+
+⍝ ∇atbash∆decipher atbash∆encipher 'test'
+
+⍝ it returns 'test'
+  atbash∆decipher atbash∆encipher 'test'
+test
+
+
+⍝ ∇atbash∆decipher atbash∆encipher 'test mes$Age'  ⍝⍝ NOTE the invalid '$' and 'A'!
+  atbash∆decipher atbash∆encipher 'test mes$Age'
+testmesge
+
+
+⍝ ∇atbash∆decipher atbash∆encipher 'this is a really long test message'
+
+⍝ it returns 'thisisareallylongtestmessage'
+  atbash∆decipher atbash∆encipher 'this is a really long test message'
+thisisareallylongtestmessage
+
+test∆show_log log

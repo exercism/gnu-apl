@@ -1,0 +1,22 @@
+{
+  "blurb": "Atbash cipher",
+  "authors": [
+    "russtopia"
+  ],
+  "contributors": [
+    "russtopia"
+  ],
+  "files": {
+    "solution": [
+      "atbash.apl"
+    ],
+    "test": [
+      "atbash.tc"
+    ],
+    "example": [
+      ".meta/atbash-example.apl"
+    ]
+  },
+  "source": "The Atbash cipher is an ancient monoalphabetic substition cipher.",
+  "source_url": "https://en.wikipedia.org/wiki/Atbash"
+}
