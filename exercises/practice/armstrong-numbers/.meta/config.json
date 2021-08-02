@@ -1,0 +1,22 @@
+{
+  "blurb": "Armstrong numbers",
+  "authors": [
+    "russtopia"
+  ],
+  "contributors": [
+    "russtopia"
+  ],
+  "files": {
+    "solution": [
+      "armstrong-numbers.apl"
+    ],
+    "test": [
+      "armstrong-numbers.tc"
+    ],
+    "example": [
+      ".meta/armstrong-numbers-example.apl"
+    ]
+  },
+  "source": "Armstrong (or Narcissistic) Numbers",
+  "source_url": "https://en.wikipedia.org/wiki/Narcissistic_number"
+}

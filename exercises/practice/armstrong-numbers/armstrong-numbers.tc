@@ -1,0 +1,32 @@
+log←'./armstrong-numbers.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative 'armstrong-numbers.apl'
+test∆clear_log log
+
+
+⍝ ∇isArmstrongNumber
+
+⍝ it returns '1'
+  isArmstrongNumber 9
+1
+
+⍝ ∇isArmstrongNumber
+
+⍝ it returns '0'
+  isArmstrongNumber 10
+0
+
+⍝ ∇isArmstrongNumber
+
+⍝ it returns '1'
+  isArmstrongNumber 153
+1
+
+⍝ ∇isArmstrongNumber
+
+⍝ it returns '0'
+  isArmstrongNumber 154
+0
+
+test∆show_log log
