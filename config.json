@@ -57,6 +57,18 @@
         ]
       },
       {
+        "slug": "beer-song",
+        "name": "99 Bottles of Beer",
+        "uuid": "47302bc5-727c-4151-80cd-d86064d5f390",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1,
+        "topics": [
+          "conditions",
+          "recursion"
+        ]
+      },
+      {
         "slug": "hamming",
         "name": "Hamming",
         "uuid": "4ddbc20a-46dc-4e00-b472-0e108bab3481",

@@ -1,0 +1,22 @@
+{
+  "blurb": "Recite the lyrics to that beloved classic, that field-trip favorite: 99 Bottles of Beer on the Wall.",
+  "authors": [
+    "FIXME-marnen"
+  ],
+  "contributors": [
+    "russtopia"
+  ],
+  "files": {
+    "solution": [
+      "beer-song.apl"
+    ],
+    "test": [
+      "beer-song.tc"
+    ],
+    "example": [
+      ".meta/beer-song-example.apl"
+    ]
+  },
+  "source": "The traditional car-ride song, \"99 Bottles of Beer on the Wall\".",
+  "source_url": "https://en.wikipedia.org/wiki/99_Bottles_of_Beer"
+}

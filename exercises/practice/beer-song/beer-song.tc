@@ -1,0 +1,35 @@
+log←'./beer-song.tc.log'
+⍎ ')COPY ',(⎕FIO 30),'/../../test.apl'
+
+test∆copy_relative 'beer-song.apl'
+test∆clear_log log
+
+⍝ ∇beerSong
+⍝ Given a non-negative number, sing the '99 Bottles of Beer' song.
+
+⍝ The song given 2 bottles on the wall ...
+  beerSong 2
+2 Bottles of beer on the wall, 2 bottles of beer.
+Take one down and pass it around, 1 bottles of beer on the wall.
+1 Bottle of beer on the wall, 1 bottle of beer.
+Take it down and pass it around, no more bottles of beer on the wall.
+No more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, 2 bottles of beer on the wall.
+
+⍝ The song given 1 bottle on the wall ...
+  beerSong 1
+1 Bottle of beer on the wall, 1 bottle of beer.
+Take it down and pass it around, no more bottles of beer on the wall.
+No more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, 1 bottles of beer on the wall.
+
+⍝ The song given no bottles on the wall ...
+  beerSong 0
+No more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, 0 bottles of beer on the wall.
+
+⍝ Negative bottles of beer?!
+  beerSong ¯1
+Negative beer? Madness!
+
+test∆show_log log
