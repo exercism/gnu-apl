@@ -1,0 +1,21 @@
+{
+  "blurb": "Recite the lyrics to that beloved classic, that field-trip favorite: 99 Bottles of Beer on the Wall.",
+  "authors": [
+    "russtopia"
+  ],
+  "contributors": [
+  ],
+  "files": {
+    "solution": [
+      "beer-song.apl"
+    ],
+    "test": [
+      "beer-song.tc"
+    ],
+    "example": [
+      ".meta/beer-song-example.apl"
+    ]
+  },
+  "source": "Learn to Program by Chris Pine",
+  "source_url": "http://pine.fm/LearnToProgram/?Chapter=06"
+}
