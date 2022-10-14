@@ -9,7 +9,7 @@
     "representer": false,
     "analyzer": false
   },
-  "blurb": "",
+  "blurb": "APL is a programming language developed in the 1960s by Kenneth E. Iverson. Its central datatype is the multidimensional array. It uses a large range of special graphic symbols to represent most functions and operators, leading to very concise code. It has been an important influence on the development of concept modeling, spreadsheets, functional programming, and computer math packages.",
   "version": 3,
   "online_editor": {
     "indent_style": "space",
